@@ -1,6 +1,6 @@
 import React from "react";
 
-const Text = () => {
+const LogText = () => {
     const textTitle = "Olá,";
     const textDescription = "Para continuar navegando de forma segura, efetue o login na rede.";
 
@@ -12,4 +12,4 @@ const Text = () => {
     );
 };
 
-export default Text;
+export default LogText;
