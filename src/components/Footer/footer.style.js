@@ -26,7 +26,7 @@ export const FooterArea = styled.div`
     align-items: center;
 
     p {
-        font-family: 'Roboto';
+        font-family: 'Mark Pro';
         font-size: 12px;
         text-align: right;
         margin: 0 14px;
