@@ -2,17 +2,26 @@ import styled from 'styled-components';
 
 export const Title = styled.h1`
     font-size: 60px;
-    color: #f00;
 `;
 
 export const Desc = styled.p`
     font-size: 16px;
-    color: #f00;
 `;
 
 export const Log = styled(Title)`
     font-size: 30px;
 `;
+
+export const LogBack = styled.div`
+`;
+
+export const Box = styled.div`
+`;
+
+export const Cont = styled.Box`
+    display: flex;
+`;
+
 
 
 // div{
