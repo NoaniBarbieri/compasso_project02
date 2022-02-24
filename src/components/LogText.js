@@ -1,4 +1,5 @@
 import React from "react";
+import {Title, Desc, Log} from '../styles';
 
 const LogText = () => {
     const textTitle = "Olá,";
@@ -7,9 +8,9 @@ const LogText = () => {
 
     return (
         <section>
-            <h1>{textTitle}</h1> 
-            <p>{textDescription}</p>
-            <h2>{textLogin}</h2>
+            <Title>{textTitle}</Title> 
+            <Desc>{textDescription}</Desc>
+            <Log>{textLogin}</Log>
         </section>
     );
 };
