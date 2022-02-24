@@ -1,8 +1,9 @@
 import React from 'react';
+import {LogInp} from '../styles';
 
 const LogInput = () => {
-    const User = (<input type="text" placeholder="Usuário"></input>);
-    const Pass = (<input type="text" placeholder="Senha"></input>);
+    const User = (<LogInp type="text" placeholder="Usuário"></LogInp>);
+    const Pass = (<LogInp type="text" placeholder="Senha"></LogInp>);
   return (
     <div>
         {User}

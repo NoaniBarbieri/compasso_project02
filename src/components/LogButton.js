@@ -1,8 +1,9 @@
 import React from 'react'
+import {LogBut} from '../styles';
 
 const LogButton = () => {
   return (
-    <button type="submit">Continuar</button>
+    <LogBut type="submit">Continuar</LogBut>
   )
 }
 

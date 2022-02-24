@@ -1,9 +1,10 @@
 import React from 'react'
+import {LogImg} from '../styles';
 
 const LogPicture = () => {
   return ( 
     <div>
-        <img src={require('../img/background.png')}/>
+        <LogImg src={require('../img/background.png')}/>
     </div>
     );
 }
