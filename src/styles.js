@@ -13,12 +13,15 @@ export const Log = styled(Title)`
 `;
 
 export const LogBack = styled.div`
+    display: flex;
+    flex-direction: column;
 `;
 
 export const Box = styled.div`
+    flex-direction: column;
 `;
 
-export const Cont = styled.Box`
+export const Cont = styled(Box)`
     display: flex;
 `;
 

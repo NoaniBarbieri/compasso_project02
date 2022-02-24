@@ -6,12 +6,14 @@ import LogButton from './components/LogButton';
 import {Cont, Box, LogBack} from './styles';
 
 function Login() {
-    return (       
+    return (  
         <LogBack>
             <Box>
-                <LogText />
-                <LogInput />
-                <LogButton />
+                <Cont>
+                    <LogText />
+                    <LogInput />
+                    <LogButton />
+                </Cont>
             </Box>
             <Box>
                 <LogPicture/>
