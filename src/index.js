@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Login from './Login';
-//import './login.css';
+import './styles/LogButton.css';
 
 
 ReactDOM.render(<Login />, document.getElementById("root"));

@@ -1,16 +1,16 @@
 import React from "react";
-import LogText from "./Pages/LogText";
-import LogInput from "./Pages/LogInput"
-import LogButton from './Pages/LogButton'
+import LogText from './components/LogText';
+import LogInput from './components/LogInput';
+import LogButton from './components/LogButton';
 
-const Login = () => {
+function Login() {
     return (
         <div>
-            <LogText/>
-            <LogInput/>
-            <LogButton/>
+            <LogText />
+            <LogInput />
+            <LogButton />
         </div>
-    ); 
-};
+    );
+}
 
 export default Login;
