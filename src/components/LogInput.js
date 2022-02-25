@@ -3,7 +3,7 @@ import {LogInp, LogIcon} from '../styles';
 
 const LogInput = () => {
     const User = (<LogInp type="text" placeholder="Usuário"></LogInp>);
-    const Pass = (<LogInp type="text" placeholder="Senha"></LogInp>);
+    const Pass = (<LogInp type="password" placeholder="Senha"></LogInp>);
   return (
     <div>
         {User}

@@ -72,6 +72,7 @@ export const Desc = styled.p`
 export const Log = styled(Title)`
     font-size: 30px;
 `;
+
 export const LogInp = styled.input`
     display: flex;
 
