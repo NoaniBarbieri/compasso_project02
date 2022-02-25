@@ -1,5 +1,5 @@
 import React from "react";
-import {Title, Desc, Log} from '../styles';
+import {Title, Desc, Log, LogSection} from '../styles';
 
 const LogText = () => {
     const textTitle = "Olá,";
@@ -7,11 +7,11 @@ const LogText = () => {
     const textLogin = "Login";
 
     return (
-        <section>
+        <LogSection>
             <Title>{textTitle}</Title> 
             <Desc>{textDescription}</Desc>
             <Log>{textLogin}</Log>
-        </section>
+        </LogSection>
     );
 };
 

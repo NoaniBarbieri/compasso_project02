@@ -3,22 +3,24 @@ import LogPicture from './components/LogPicture';
 import LogText from './components/LogText';
 import LogInput from './components/LogInput';
 import LogButton from './components/LogButton';
-import {Cont, Box, LogBack} from './styles';
+import LogUserInvalid from './components/LogUserInvalid';
+import {Cont, Boxlog, BoxImage, LogBackground} from './styles';
 
 function Login() {
     return (  
-        <LogBack>
-            <Box>
+        <LogBackground>
+            <Boxlog>
                 <Cont>
                     <LogText />
                     <LogInput />
+                    <LogUserInvalid />
                     <LogButton />
                 </Cont>
-            </Box>
-            <Box>
+            </Boxlog>
+            <BoxImage>
                 <LogPicture/>
-            </Box>
-        </LogBack>
+            </BoxImage>
+        </LogBackground>
     );
 }
 

@@ -3,12 +3,3 @@ import ReactDOM from 'react-dom';
 import Login from './Login';
 
 ReactDOM.render(<Login />, document.getElementById("root"));
-
-
-
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <Login />
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// )
