@@ -91,15 +91,16 @@ export const LogIcon = styled.img`
 
 export const LogBut = styled.button`
     width: 379px;
+    border-color: #c13216;
     max-height: 67px;
     padding: 20px 150px;
-    border: 2px;
+    border: solid;
     border-radius: 50px;
     font-size: 18px;
     color: #fff;
+    border-color: #c13216;
     box-shadow: inset 5px 5px 15px #c13216;
     background-image: linear-gradient(to right, #FF2D04, #c13216);
-    text-decoration: none;
 `;
 
 export const LogInvalid = styled.nav`
