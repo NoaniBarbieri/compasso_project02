@@ -7,3 +7,26 @@ export const Nav = styled.div`
     width: 150px;
     height: 40px;
 `;
+
+
+export const Time = styled.h1`
+display: flex;
+justify-content: center;
+align-items: center;
+width: 327px;
+height: 146px;
+margin-top: -65px;
+margin-left: 460px;
+
+@font-face{
+    font-family: MarkProBold;
+    src: url(${MarkProBold});
+}
+    
+font-family:  MarkProBold, sans-serif;
+font-style: normal;
+font-size: 5.8em;
+line-height: 10px;
+text-align: center;
+color: #222222;
+`;
