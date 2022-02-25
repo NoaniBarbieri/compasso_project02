@@ -3,7 +3,7 @@ import MarkProBold from "../../assets/fonts/MarkProBold.ttf";
 import MarkPro from "../../assets/fonts/MarkPro.ttf";
 
 export const Div = styled.div `
-    background: #E5E5E5;
+    background: linear-gradient(105.96deg, #FFFFFF 0%, #F0F0F0 97.86%);
     margin: 0px;
     width: 100%;
 `
