@@ -89,7 +89,7 @@ export const ClimateStyle = styled.p `
         width: 75px;
         height: 61px;
         left: 1804px;
-        top: 42px;
+        top: 40px;
         margin-left: 45px;
         font-style: normal;
         font-weight: bold;
