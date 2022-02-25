@@ -30,3 +30,6 @@ line-height: 10px;
 text-align: center;
 color: #222222;
 `;
+
+
+
