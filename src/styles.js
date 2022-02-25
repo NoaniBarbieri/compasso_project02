@@ -90,7 +90,7 @@ export const LogInp = styled.input`
     font-size: 16px;
 
     ::placeholder {
-       color: #fff;
+       color: #E0E0E0;
    }
 
     margin: 17px 0px 32px 0px;
@@ -100,7 +100,7 @@ export const LogInp = styled.input`
 
     border: 1px;
     border-style: solid;
-    border-color: #fff;
+    border-color: #E0E0E0;
     border-radius: 50px;
 `;
 
@@ -122,12 +122,13 @@ export const LogBut = styled.button`
     background-image: linear-gradient(to right, #FF2D04, #c13216);
 
     @font-face{
-        font-family: MarkPro;
-        src: url(${MarkPro})
+        font-family: MarkProBold;
+        src: url(${MarkProBold})
     }
-    font-family: MarkPro, sans-serif;
+    font-family: MarkProBold, sans-serif;
     font-size: 18px;
-    color: #fff;
+    color: #FFF;
+
 `;
 
 export const LogInvalid = styled.nav`
