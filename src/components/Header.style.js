@@ -33,3 +33,28 @@ color: #222222;
 
 
 
+export const Days = styled.p `
+
+display: flex;
+justify-content: center;
+align-items: center;
+width: 250px;
+height: 90px;
+margin-left: 540px;
+margin-top: -15px;
+
+
+@font-face{
+    font-family: Mark-Pro;
+    src: url(${MarkPro});
+}
+    
+font-family:  Mark-Pro, sans-serif;
+font-style: normal;
+font-size: 8px;
+line-height: 7px;
+text-align: center;
+color: #222222;
+
+
+`;
