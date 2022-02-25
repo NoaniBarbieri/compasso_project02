@@ -16,7 +16,7 @@ export const Time = styled.h1`
     width: 327px;
     height: 146px;
     margin-top: -65px;
-    margin-left: 460px;
+    margin-left: 550px;
 
     @font-face{
         font-family: MarkProBold;
