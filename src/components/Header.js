@@ -1,12 +1,6 @@
 import React from "react";
-import logo from "../assets/LogoCompasso.png"
+import logo from "../assets/images/LogoCompasso.png"
 import { Nav } from "./Header.style";
-import { Time } from "./Header.style";
-import { Days } from "./Header.style";
-import { ClimateStyle } from "./Header.style";
-import Clock from "./clockTime";
-import CalendarDate from "./CalendarDate";
-import GetClimate from "./GetClimate";
 
 
 function Header(){
@@ -14,10 +8,7 @@ function Header(){
         <div>
             <Nav>
                 <img src={logo} alt="projectHome"/>
-                <Time><Clock/></Time>
             </Nav>
-            <Days><CalendarDate/></Days>
-            <ClimateStyle><GetClimate/></ClimateStyle>
         </div>
     )
 }
