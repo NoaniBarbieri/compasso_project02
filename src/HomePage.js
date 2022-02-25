@@ -1,9 +1,9 @@
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
 import Footer from "./components/Footer/footer"
 import CentralContentHome from "./components/CentralContentHome/index"
 import React from "react";
 
-function App() {
+function HomePage() {
   return (
     <div className="App">
           <Header/>
@@ -13,4 +13,4 @@ function App() {
   );
 }
 
-export default App;
+export default HomePage;
