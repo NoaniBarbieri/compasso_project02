@@ -19,21 +19,20 @@ export const FooterContainer = styled.div`
 
 export const FooterArea = styled.div`
 
-
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    p {
-        font-family: 'Mark Pro';
+    .leftText {
+        font-family: 'MarkPro';
         font-size: 12px;
         text-align: right;
         margin: 0 14px;
     }
 
-    span {
-        width: 61px;
+    .bar {
+        min-width: 61px;
         overflow: hidden;
         height: 0px;
         border: 1px solid #FFFFFF;
@@ -68,4 +67,58 @@ export const FooterArea = styled.div`
             font-family: 'Roboto';
         }
     }
+
+    .logoutArea {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex:1;
+        font-family: 'MarkPro';
+    }
+    
+    .timerArea {
+        display: flex;
+        align-items: center;
+        margin-right: 86px;
+    }
+
+    .footerButtons {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+    }
+
+    .refresh{
+        margin-right: 48px;
+        font-size: 14px;
+        text-align: right;
+    }
+
+    .timer {
+        font-size: 14px;
+        text-align: center;
+
+        & span {
+            font-family: 'Roboto';
+            font-size: 48px;
+        }
+    }
+
+    .continue {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 131px;
+        height: 100px;
+        line-height: 15px;
+        background: #FFFFFF;
+        color: #C13216;
+        margin-right: 46px;
+    }
+
+    .logout{
+        margin-right: 46px;
+    }
+
 `;
