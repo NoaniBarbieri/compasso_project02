@@ -1,6 +1,13 @@
-import styled from 'styled-components';
+import styled,{createGlobalStyle} from 'styled-components';
 import MarkPro from './assets/fonts/MarkPro.ttf'
 import MarkProBold from './assets/fonts/MarkProBold.ttf'
+
+export const GlobalStyles = createGlobalStyle`
+    * {
+        margin: 0;
+        padding: 0;
+    }
+`;
 
 export const LogBackground = styled.div`
     display: flex;
@@ -64,6 +71,23 @@ export const Desc = styled.p`
 export const Log = styled(Title)`
     font-size: 30px;
 `;
+export const LogInp = styled.input`
+    display: flex;
+    margin: 32px 0px 32px 0px;
+    padding: 20px 205px 20px 20px;
+    max-width: 150px;
+    max-height: 20px;
+    background: none;
+
+    border: 1px;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 50px;
+`;
+
+export const LogIcon = styled.img`
+   padding: 17px 20px 17px 336px;
+`;
 
 export const LogBut = styled.button`
     width: 379px;
@@ -76,26 +100,6 @@ export const LogBut = styled.button`
     box-shadow: inset 5px 5px 15px #c13216;
     background-image: linear-gradient(to right, #FF2D04, #c13216);
     text-decoration: none;
-`;
-
-export const LogInp = styled.input`
-    display: flex;
-    margin: 32px 0px 32px 0px;
-    padding: 20px 205px 20px 20px;
-    max-width: 150px;
-    max-height: 20px;
-    background: none;
-
-    border: 1px;
-    border-style: solid;
-    border-color: #E9B425;
-    border-radius: 50px;
-`;
-
-export const LogImg = styled.img`
-    width: 960px;
-    height: 1080px;
-    object-fit: cover;
 `;
 
 export const LogInvalid = styled.nav`
@@ -114,4 +118,11 @@ export const LogInvalid = styled.nav`
     color: #E9B425;
     align-self: center;
     text-align: center;
+`;
+
+
+export const LogImg = styled.img`
+    width: 960px;
+    height: 1080px;
+    object-fit: cover;
 `;

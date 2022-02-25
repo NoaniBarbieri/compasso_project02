@@ -6,7 +6,7 @@ import LogButton from './components/LogButton';
 import LogUserInvalid from './components/LogUserInvalid';
 import {Cont, Boxlog, BoxImage, LogBackground} from './styles';
 
-function Login() {
+function Login () {
     return (  
         <LogBackground>
             <Boxlog>
@@ -24,4 +24,4 @@ function Login() {
     );
 }
 
-export default Login;
+export default Login ;

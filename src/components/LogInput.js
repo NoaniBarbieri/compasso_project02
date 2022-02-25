@@ -1,5 +1,5 @@
 import React from 'react';
-import {LogInp} from '../styles';
+import {LogInp, LogIcon} from '../styles';
 
 const LogInput = () => {
     const User = (<LogInp type="text" placeholder="Usuário"></LogInp>);
