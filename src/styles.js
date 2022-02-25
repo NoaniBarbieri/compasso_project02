@@ -44,6 +44,7 @@ export const LogSection = styled.section`
 export const Title = styled.nav` //se concertado a fonte troque para styled.h1
     align-self: flex-start;
     width: 100%;
+    padding-bottom: 17px;
 
     @font-face{
         font-family: MarkPro;
@@ -73,6 +74,14 @@ export const Log = styled(Title)`
 `;
 export const LogInp = styled.input`
     display: flex;
+
+    @font-face{
+        font-family: MarkPro;
+        src: url(${MarkPro})
+    }
+    color: white;
+    font-family: MarkPro, sans-serif;
+
     margin: 32px 0px 32px 0px;
     padding: 20px 205px 20px 20px;
     max-width: 150px;
