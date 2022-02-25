@@ -5,6 +5,7 @@ import { Time } from "./Header.style";
 import { Days } from "./Header.style";
 import Clock from "./ClockTime";
 import CalendarDate from "./CalendarDate";
+import GetClimate from "./GetClimate";
 
 function Header(){
     return (
@@ -14,6 +15,7 @@ function Header(){
                 <Time><Clock/></Time>
             </Nav>
             <Days><CalendarDate/></Days>
+            <GetClimate/>
         </div>
     )
 }
