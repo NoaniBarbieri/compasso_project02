@@ -9,7 +9,7 @@ export default function GetClimate(){
     });
 
     useEffect(() => {
-        axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=-28.2628&lon=-52.4067&units=metric&APPID=911036015a1002a362301b560e7c61c0`)
+        axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=-28.2628&lon=-52.4067&units=metric&APPID=52f592c34ccda232d98128280512d784`)
         .then(response => {
             setDatabase({
                 city: "Passo Fundo - RS",

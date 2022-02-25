@@ -2,15 +2,17 @@ import styled from "styled-components";
 import MarkProBold from "../../assets/fonts/MarkProBold.ttf";
 import MarkPro from "../../assets/fonts/MarkPro.ttf";
 
-export const Main = styled.div `
-    max-width: 100%;
-    display: flex;
-    background-color: red;
+export const Div = styled.div `
+    background: #E5E5E5;
+    margin: 0px;
+    width: 100%;
 `
+
 export const Nav = styled.div`
-    margin: 20px 0 20px 40px;
     width: 150px;
     height: 40px;
+    padding-left: 40px;
+    padding-top: 25px;
 `;
 
 
@@ -21,8 +23,7 @@ export const Time = styled.h1`
     width: 327px;
     height: 146px;
     margin-top: -65px;
-    margin-left: 855px;
-
+    margin-left: 875px;
     @font-face{
         font-family: MarkProBold;
         src: url(${MarkProBold});
@@ -39,16 +40,13 @@ export const Time = styled.h1`
 
 
 export const Days = styled.p `
-
     display: flex;
     justify-content: center;
     align-items: center;
     width: 250px;
     height: 90px;
     margin-left: 849px;
-    margin-top: -15px;
-
-
+    margin-top: 20px;
     @font-face{
         font-family: Mark-Pro;
         src: url(${MarkPro});
@@ -73,27 +71,23 @@ export const ClimateStyle = styled.p `
     height: 18px;
     margin-left: 1760px;
     margin-top: -100px;
-
-
+    
     @font-face{
         font-family: MarkPro;
         src: url(${MarkPro});
     }
-
     font-family: MarkPro, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 18px;
     color: #222222;
-
     span{
         display: flex;
         justify-content: center;
         align-items: center;
         width: 75px;
         height: 61px;
-        top: 40px;
         margin-left: 44px;
         font-style: normal;
         font-weight: bold;
