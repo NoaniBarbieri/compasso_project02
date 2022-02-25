@@ -1,7 +1,12 @@
 import styled from "styled-components";
-import MarkProBold from "../assets/fonts/MarkProBold.ttf";
-import MarkPro from "../assets/fonts/MarkPro.ttf";
+import MarkProBold from "../../assets/fonts/MarkProBold.ttf";
+import MarkPro from "../../assets/fonts/MarkPro.ttf";
 
+export const Main = styled.div `
+    max-width: 100%;
+    display: flex;
+    background-color: red;
+`
 export const Nav = styled.div`
     margin: 20px 0 20px 40px;
     width: 150px;
@@ -16,7 +21,7 @@ export const Time = styled.h1`
     width: 327px;
     height: 146px;
     margin-top: -65px;
-    margin-left: 550px;
+    margin-left: 855px;
 
     @font-face{
         font-family: MarkProBold;
@@ -40,7 +45,7 @@ export const Days = styled.p `
     align-items: center;
     width: 250px;
     height: 90px;
-    margin-left: 540px;
+    margin-left: 849px;
     margin-top: -15px;
 
 
@@ -66,7 +71,7 @@ export const ClimateStyle = styled.p `
     align-items: center;
     width: 119px;
     height: 18px;
-    margin-left: 1180px;
+    margin-left: 1760px;
     margin-top: -100px;
 
 
@@ -88,9 +93,8 @@ export const ClimateStyle = styled.p `
         align-items: center;
         width: 75px;
         height: 61px;
-        left: 1804px;
         top: 40px;
-        margin-left: 45px;
+        margin-left: 44px;
         font-style: normal;
         font-weight: bold;
         font-size: 48px;

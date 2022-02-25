@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/images/LogoCompasso.png"
+import logo from "../../assets/images/LogoCompasso.png"
 import { Nav } from "./Header.style";
 import { Time } from "./Header.style";
 import { Days } from "./Header.style";
