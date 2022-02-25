@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import BallLogoImg from '../../../assets/images/bola-LogoCompasso1.png'
 
 const Img = styled.img`
     position: relative;
@@ -8,3 +9,11 @@ const Img = styled.img`
     flex-shrink: 1;
     display: block;
 `;
+
+const BallLogo = () => {
+    return (
+        <Img src={BallLogoImg} />
+    )
+}
+
+export { BallLogo };
