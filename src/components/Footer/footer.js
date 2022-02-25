@@ -1,4 +1,5 @@
 import { FooterContainer, FooterArea } from './footer.style';
+import { getDevs } from '../../helpers/devsAPI'
 
 const Footer = () => {
     return (
@@ -9,8 +10,14 @@ const Footer = () => {
             </FooterArea>
 
             <FooterArea>
-                <input type={'text'} placeholder={'Buscar usuários'} ></input>
+                  
+                <input type={'text'} placeholder={'Buscar usuários'} onKeyPress={event => {
+                    if (event.key === 'Enter') {
+                        getDevs();
+                    }
+                }}></input>
                 <span className={'bar'}></span>
+
             </FooterArea>
 
             <FooterArea>
