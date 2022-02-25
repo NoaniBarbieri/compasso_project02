@@ -4,7 +4,7 @@ import {LogImg} from '../styles';
 const LogPicture = () => {
   return ( 
     <div>
-        <LogImg src={require('../img/background.png')}/>
+        <LogImg src={require('../assets/images/background.png')}/>
     </div>
     );
 }

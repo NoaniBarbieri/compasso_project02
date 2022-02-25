@@ -1,3 +1,4 @@
+import { useInRouterContext } from 'react-router-dom';
 import styled,{createGlobalStyle} from 'styled-components';
 import MarkPro from './assets/fonts/MarkPro.ttf'
 import MarkProBold from './assets/fonts/MarkProBold.ttf'
@@ -33,7 +34,7 @@ export const BoxImage = styled(Boxlog)`
 export const Cont = styled(Boxlog)`
     display: flex;
     justify-content: center;
-    width: 380px;
+    width: 379px;
 `;
 
 export const LogSection = styled.section`
@@ -58,7 +59,7 @@ export const Title = styled.nav` //se concertado a fonte troque para styled.h1
 export const Desc = styled.p`
     display: flex;
     width: 300px;
-    padding-bottom: 100px;
+    padding-bottom: 145px;
 
     @font-face{
         font-family: MarkPro;
@@ -75,19 +76,27 @@ export const Log = styled(Title)`
 
 export const LogInp = styled.input`
     display: flex;
+    /* background: url(${require('./assets/images/UserIcon.png')});
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: 95% 50%; */
+    background: none;
 
     @font-face{
         font-family: MarkPro;
         src: url(${MarkPro})
     }
-    color: white;
     font-family: MarkPro, sans-serif;
+    font-size: 16px;
 
-    margin: 32px 0px 32px 0px;
-    padding: 20px 205px 20px 20px;
+    ::placeholder {
+       color: #fff;
+   }
+
+    margin: 17px 0px 32px 0px;
+    padding: 18px 205px 18px 20px;
     max-width: 150px;
     max-height: 20px;
-    background: none;
 
     border: 1px;
     border-style: solid;
@@ -100,17 +109,25 @@ export const LogIcon = styled.img`
 `;
 
 export const LogBut = styled.button`
+    display: flex;
     width: 379px;
-    border-color: #c13216;
     max-height: 67px;
-    padding: 20px 150px;
-    border: solid;
+    padding: 20px 143px;
+
+    border: 2px solid;
     border-radius: 50px;
-    font-size: 18px;
-    color: #fff;
     border-color: #c13216;
+
     box-shadow: inset 5px 5px 15px #c13216;
     background-image: linear-gradient(to right, #FF2D04, #c13216);
+
+    @font-face{
+        font-family: MarkPro;
+        src: url(${MarkPro})
+    }
+    font-family: MarkPro, sans-serif;
+    font-size: 18px;
+    color: #fff;
 `;
 
 export const LogInvalid = styled.nav`
