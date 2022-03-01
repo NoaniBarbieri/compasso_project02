@@ -1,27 +1,23 @@
 import styled from "styled-components";
 import '../../index.css';
 
-
 export const FooterContainer = styled.div`
-
     display: flex;
+    position: fixed;
+    bottom: 0;
+    max-width: 100%;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
     background: linear-gradient(90.16deg, #33383D 0%, #1C1D20 100%);
-    position: absolute;
-    width: 100vw;
-    height: 100px;
-    left: 0px;
-    bottom: 0px;
+    font-family: 'MarkPro';
     color: #FFFFFF;
 `;
 
 export const FooterArea = styled.div`
-
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
     .leftText {
@@ -31,32 +27,25 @@ export const FooterArea = styled.div`
         margin: 0 14px;
     }
 
-    .bar {
-        min-width: 61px;
-        overflow: hidden;
-        height: 0px;
-        border: 1px solid #FFFFFF;
-        transform: rotate(90deg);
-        background: #FFFFFF;
-    }
-
     input {
-        width: 453px;
+        margin: 0 auto;
+        width: 70%;
         height: 45px;
         background: #26292C;
         border: 1px solid #FFFFFF;
         box-sizing: border-box;
         border-radius: 50px;
-        margin: 0 135px;
         font-family: 'Roboto';
-        font-size: 14px;
+        font-size: 60%;
         line-height: 16px;
         outline: 0;
         text-align: center;
+        justify-content: space-between;
         color: #FFFFFF;
         background: url(${require('../../assets/images/Vector.png')});
         background-repeat: no-repeat;
-        background-position: 5% 50%;
+        background-position: 20px 50%;
+        padding: 0 20px 0 50px;
 
         &:focus {
             border: 1px solid #E9B425;
@@ -68,59 +57,46 @@ export const FooterArea = styled.div`
         }
     }
 
-    .logoutArea {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex:1;
-        font-family: 'MarkPro';
-    }
-    
-    .timerArea {
-        display: flex;
-        align-items: center;
-        margin-right: 86px;
-    }
+    @media (max-width: 1023px) {
+        justify-content: center;
+        align-content: center;
+        flex-wrap: nowrap;
 
-    .footerButtons {
-        display: flex;
-        align-items: center;
-        font-size: 12px;
-    }
+        .timerArea {
+            display: none;
+        }
 
-    .refresh{
-        margin-right: 48px;
-        font-size: 14px;
-        text-align: right;
-    }
+        .footerButtons {
+            margin-left: 0;
+        }
 
-    .timer {
-        font-size: 14px;
-        text-align: center;
+        ${this}:nth-child(1) {
+            display: none;
+        } 
 
-        & span {
-            font-family: 'Roboto';
-            font-size: 48px;
+        ${this}:nth-child(2) {
+            flex: 0.545833;
+        }
+
+        input {
+            width: 80%;
+            background-size: 15px;
+            padding: 0 15px 0 40px;
+            background-position: 15px 50%;
+        }
+
+        ${this}:nth-child(3) {
+            flex: 0.454166;
         }
     }
 
-    .continue {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 131px;
-        height: 100px;
-        line-height: 15px;
-        background: #FFFFFF;
-        color: #C13216;
-        margin-right: 46px;
+    @media (max-width: 320px) {
+        input {
+            background-size: 12px;
+            padding: 0 20px 0 35px;
+            font-size: 7px;
+        }
     }
-
-    .logout{
-        margin-right: 46px;
-    }
-
 `;
 
 /* Buttons Logout and Refresh */
@@ -140,7 +116,6 @@ const ButtonSquareFooter = styled.button`
     font-size: 12px;
     line-height: 15px;
     font-family: 'MarkPro';
-    /* padding: 0 20px; */
     border: 0;
     cursor: pointer;
 `;
@@ -172,10 +147,8 @@ const TimerLogoutContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* padding: 0 14.67% 0 7%; */
     padding-right: 40px;
     border-left: 3px solid #FFF;
-    /* background-color: blue; */
 
     span {
         flex: 1;
@@ -187,7 +160,6 @@ const TimerLogoutContainer = styled.div`
         flex: 1;
         text-align: center;
         margin-left: 14%;
-        /* background-color: blue; */
 
         p {
             font-family: 'Roboto';
