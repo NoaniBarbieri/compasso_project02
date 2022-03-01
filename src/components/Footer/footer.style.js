@@ -122,3 +122,46 @@ export const FooterArea = styled.div`
     }
 
 `;
+
+/* Buttons Logout and Refresh */
+const ButtonFooterContainer = styled.div`
+    flex: 1;
+    display: flex;
+    height: 100%;
+    font-size: 12px;
+`;
+
+const ButtonSquareFooter = styled.button`
+    flex: 1;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    line-height: 15px;
+    font-family: 'MarkPro';
+    /* padding: 0 20px; */
+    border: 0;
+    cursor: pointer;
+`;
+
+export const ButtonResetTimer = styled(ButtonSquareFooter)`
+    background-color: #FFFFFF;
+    color: #C13216;
+`;
+
+export const ButtonLogout = styled(ButtonSquareFooter)`
+    font-family: 'Roboto';
+    font-weight: bold;
+    background-color: transparent;
+    color: #FFF;
+`;
+
+export const ButtonsAuth = () => {
+    return (
+        <ButtonFooterContainer>
+            <ButtonResetTimer>Continuar<br />Navegando</ButtonResetTimer>
+            <ButtonLogout>Logout</ButtonLogout>
+        </ButtonFooterContainer>
+    )
+}
