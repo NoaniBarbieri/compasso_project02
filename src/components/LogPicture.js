@@ -3,10 +3,8 @@ import {LogImg} from '../styles';
 
 const LogPicture = () => {
   return ( 
-    <div>
-        <LogImg src={require('../assets/images/background.png')}/>
-    </div>
-    );
+  <LogImg src={require('../assets/images/background.png')}/>
+  );
 }
 
 export default LogPicture
