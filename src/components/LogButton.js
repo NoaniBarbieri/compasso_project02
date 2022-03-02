@@ -1,10 +1,11 @@
 import React from 'react'
-import {LogBut} from '../styles';
+import {LogButtonStyle} from '../styles';
+
 
 const LogButton = () => {
   return (
-    <LogBut type="submit">Continuar</LogBut>
-  )
+    <LogButtonStyle type="submit">Continuar</LogButtonStyle>
+  );
 }
 
 export default LogButton

@@ -1,5 +1,4 @@
 import React from "react";
-import LogPicture from './components/LogPicture';
 import LogText from './components/LogText';
 import LogButton from './components/LogButton';
 import LogUserInvalid from './components/LogUserInvalid';
@@ -19,9 +18,7 @@ function Login () {
                     <LogButton />
                 </Cont>
             </Boxlog>
-            <BoxImage>
-                <LogPicture/>
-            </BoxImage>
+            <BoxImage />
         </LogBackground>
     );
 }
