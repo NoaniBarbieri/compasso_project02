@@ -1,14 +1,16 @@
 import React,{useState, useEffect} from "react"
 import axios from "axios"
+import { ClimateStyle } from "../Header/Header.style";
+import Nuvem from "../../assets/images/Nuvem.png"
 
-export default function GetClimate(){
+export const Climate = () => {
 
     const [database, setDatabase] = useState({
         city: "",
         temp: "",
     });
 
-    useEffect(() => {
+    function getClimate (){
         axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=-28.2628&lon=-52.4067&units=metric&APPID=52f592c34ccda232d98128280512d784`)
         .then(response => {
             setDatabase({
@@ -17,14 +19,18 @@ export default function GetClimate(){
             });
         })
         .catch(error => console.log(error))
-    });
+    };
+    useEffect(() => {
+        getClimate();
+    }, []);
     return (
-        <>
+        <ClimateStyle>
+           <p>{database ? database.city : ""}</p>
             <div>
-                <p>{database ? database.city : ""}</p>
+                <img src={Nuvem}/>
                 <span>{database ? database.temp : "" }</span>
             </div>        
-        </>
+        </ClimateStyle>
     )
 }
    
