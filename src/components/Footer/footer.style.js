@@ -7,6 +7,7 @@ export const FooterContainer = styled.div`
     bottom: 0;
     max-width: 100%;
     width: 100%;
+    height: 15%;
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(90.16deg, #33383D 0%, #1C1D20 100%);
@@ -19,12 +20,20 @@ export const FooterArea = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    height: 100%;
+    
+    ${this}:nth-child(2) {
+        border-left: 3px solid #FFF;
+        border-right: 3px solid #FFF;
+        height: 70%;
+    }
+    
     .leftText {
         font-family: 'MarkPro';
         font-size: 12px;
         text-align: right;
         margin: 0 14px;
+        padding-right: 10px;
     }
 
     input {
@@ -36,8 +45,7 @@ export const FooterArea = styled.div`
         box-sizing: border-box;
         border-radius: 50px;
         font-family: 'Roboto';
-        font-size: 60%;
-        line-height: 16px;
+        font-size: 14px;
         outline: 0;
         text-align: center;
         justify-content: space-between;
@@ -76,6 +84,8 @@ export const FooterArea = styled.div`
 
         ${this}:nth-child(2) {
             flex: 0.545833;
+            border: 0;
+            height: 100%;
         }
 
         input {
@@ -94,92 +104,8 @@ export const FooterArea = styled.div`
         input {
             background-size: 12px;
             padding: 0 20px 0 35px;
-            font-size: 7px;
+            font-size: 10px;
         }
     }
 `;
 
-/* Buttons Logout and Refresh */
-const ButtonFooterContainer = styled.div`
-    flex: 1;
-    display: flex;
-    height: 100%;
-    font-size: 12px;
-`;
-
-const ButtonSquareFooter = styled.button`
-    flex: 1;
-    display: flex;
-    height: 100px;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
-    line-height: 15px;
-    font-family: 'MarkPro';
-    border: 0;
-    cursor: pointer;
-`;
-
-export const ButtonResetTimer = styled(ButtonSquareFooter)`
-    background-color: #FFFFFF;
-    color: #C13216;
-`;
-
-export const ButtonLogout = styled(ButtonSquareFooter)`
-    font-family: 'Roboto';
-    font-weight: bold;
-    background-color: transparent;
-    color: #FFF;
-`;
-
-export const ButtonsAuth = () => {
-    return (
-        <ButtonFooterContainer>
-            <ButtonResetTimer>Continuar<br />Navegando</ButtonResetTimer>
-            <ButtonLogout>Logout</ButtonLogout>
-        </ButtonFooterContainer>
-    )
-}
-
-/* TimerLogout */
-const TimerLogoutContainer = styled.div`
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 40px;
-    border-left: 3px solid #FFF;
-
-    span {
-        flex: 1;
-        font-size: 14px;
-        text-align: right;
-    }
-    
-    div {
-        flex: 1;
-        text-align: center;
-        margin-left: 14%;
-
-        p {
-            font-family: 'Roboto';
-            font-size: 48px;
-        }
-    }
-
-    @media (max-width: 1023px) {
-        display: none;
-    }
-`;
-
-export const TimerToLogout = () => {
-    return (
-        <TimerLogoutContainer>
-            <span>Application <br /> refresh in</span>
-            <div>
-                <p>180</p>
-                <span>seconds</span>
-            </div>
-        </TimerLogoutContainer>
-    )
-};
