@@ -1,6 +1,6 @@
 import React,{useState, useEffect} from "react"
 import axios from "axios"
-import { ClimateStyle } from "../Header/Header.style";
+import { ClimateStyle } from "./Climate.style";
 import Nuvem from "../../assets/images/Nuvem.png"
 
 export const Climate = () => {
@@ -28,7 +28,7 @@ export const Climate = () => {
            <p>{database ? database.city : ""}</p>
             <div>
                 <img src={Nuvem}/>
-                <span>{database ? database.temp : "" }</span>
+                <h1>{database ? database.temp : "" }</h1>
             </div>        
         </ClimateStyle>
     )

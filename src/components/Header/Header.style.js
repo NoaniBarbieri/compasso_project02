@@ -1,18 +1,11 @@
 import styled from "styled-components";
-import MarkProBold from "../../assets/fonts/MarkProBold.ttf";
-import MarkPro from "../../assets/fonts/MarkPro.ttf";
-
-export const Div = styled.div `
-    background: #E5E5E5;
-    margin: 0px;
-    width: 100%;
-`
 
 export const Nav = styled.div`
-    width: 150px;
-    height: 40px;
-    padding-left: 40px;
-    padding-top: 25px;
+    background: linear-gradient(105.96deg, #FFFFFF 0%, #F0F0F0 97.86%);
+    width: 100%;
+    margin: 0px;
+    height: auto;
+    padding: 20px;
 `;
 
 
