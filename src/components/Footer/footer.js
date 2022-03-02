@@ -1,4 +1,6 @@
-import { FooterContainer, FooterArea, ButtonResetTimer, ButtonLogout, TimerToLogout, ButtonsAuth } from './footer.style';
+import { FooterContainer, FooterArea } from './footer.style';
+import { TimerToLogout } from '../TimerLogout/style';
+import { ButtonsAuth } from '../partials/Buttons/style';
 import { getDevs } from '../../helpers/devsAPI'
 
 const Footer = () => {
