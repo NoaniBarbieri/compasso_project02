@@ -7,8 +7,8 @@ function HomePage() {
   return (
     <div className="App">
           <Header/>
-          <CentralContentHome/>
-          <Footer/>
+          {/* <CentralContentHome/>
+          <Footer/> */}
     </div>
   );
 }
