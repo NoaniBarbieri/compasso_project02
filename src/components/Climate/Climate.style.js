@@ -27,8 +27,9 @@ export const ClimateStyle = styled.div `
 
     div{
         display: flex;
-        align-items: center;
         justify-content: space-between;
+        align-items: center;
+        
     }
         img {
             width: 31px;
