@@ -10,10 +10,6 @@ export const GlobalStyles = createGlobalStyle`
         padding: 0;
     }
 
-    *{
-        max-width: 100%;
-        height: 100%;
-    }
 
     @font-face {
         font-family: MarkPro;
@@ -46,11 +42,6 @@ export const Boxlog = styled.div`
     height: 100vh;
     width: 50vw;
 
-    img {
-        max-width: 306px;
-        max-height: 69px;
-    }
-
     @media (max-height: 667px) {
         height: auto;
   }
@@ -72,9 +63,7 @@ export const Cont = styled(Boxlog)`
     max-width: 380px;
     min-width: 380px;
     max-height: 685px;
-
     
-
     @media (max-width: 420px) {
         max-width: 260px;
         min-width: 260px;
@@ -123,6 +112,8 @@ export const Log = styled(Title)`
 
 export const InputStyle = styled.input`
     display: flex;
+    max-width: 100%;
+    height: 100%;
 
     @font-face{
         font-family: MarkPro;
