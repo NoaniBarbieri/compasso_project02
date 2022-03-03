@@ -1,12 +1,14 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const CentralContent = styled.main`
+    position: absolute;
+    top: 15%;
     max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 70%;
     display: flex;
     justify-content: space-between;
-    padding: 0 8% 0 0;
+    padding-right: 3%;
     overflow: hidden;
     background: linear-gradient(105.96deg, #FFFFFF 0%, #F0F0F0 97.86%);
-    box-shadow: 4px 4px 70px rgba(0, 0, 0, 0.25);
 `;
