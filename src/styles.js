@@ -6,11 +6,13 @@ import MarkProBold from "./assets/fonts/MarkProBold.ttf";
 export const GlobalStyles = createGlobalStyle`
     * {
         box-sizing: border-box;
-        max-width: 100%;
         margin: 0;
         padding: 0;
+    }
+
+    *{
+        max-width: 100%;
         height: 100%;
-        justify-content:center;
     }
 
     @font-face {
@@ -27,6 +29,7 @@ export const GlobalStyles = createGlobalStyle`
 export const LogBackground = styled.div`
     background: linear-gradient(180deg, #33383D 0%, #1C1D20 100%);
     display: flex;
+    justify-content: center;
     width: 100vw;
     height: 100vh;
 
@@ -37,10 +40,16 @@ export const LogBackground = styled.div`
 
 export const Boxlog = styled.div`
     display: flex;
+    justify-content:center;
+    align-items: center;
     flex-direction: column;
     height: 100vh;
     width: 50vw;
-    align-items: center;
+
+    img {
+        max-width: 306px;
+        max-height: 69px;
+    }
 
     @media (max-height: 667px) {
         height: auto;
