@@ -54,3 +54,10 @@ input {
 }
 
 `
+
+export const InputLarge = styled(InputSearch)`
+    height: 40%;
+    input{
+        width: 516px;
+    }
+`
