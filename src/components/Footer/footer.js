@@ -1,6 +1,5 @@
 import { FooterContainer, FooterArea } from './footer.style';
 import { TimerToLogout } from '../TimerLogout';
-import { ButtonsAuth } from '../partials/Buttons/style';
 import { InputSearch } from '../partials/Inputs/search.style'
 import { getDevs } from '../../helpers/devsAPI';
 
