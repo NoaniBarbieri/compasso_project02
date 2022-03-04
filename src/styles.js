@@ -1,15 +1,13 @@
 import { useInRouterContext } from 'react-router-dom';
-import styled,{createGlobalStyle} from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 import MarkPro from "./assets/fonts/MarkPro.ttf";
 import MarkProBold from "./assets/fonts/MarkProBold.ttf";
 
 export const GlobalStyles = createGlobalStyle`
     * {
         box-sizing: border-box;
-        max-width: 100%;
         margin: 0;
         padding: 0;
-        height: 100%;
     }
 
     @font-face {
@@ -24,80 +22,85 @@ export const GlobalStyles = createGlobalStyle`
 `;
 
 export const LogBackground = styled.div`
-    background: linear-gradient(180deg, #33383D 0%, #1C1D20 100%);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0%;
     display: flex;
-    width: 100%;
-    height: 100%;
+    background: linear-gradient(180deg, #33383D 0%, #1C1D20 100%);
 `;
 
 export const Boxlog = styled.div`
+    flex: 1;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 50%;
+    justify-content: center;
     align-items: center;
 `;
 
-export const BoxImage = styled(Boxlog)`
+export const BoxImage = styled.div`
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
     background: url(${require('./assets/images/background.png')});
     background-size: cover;
     background-repeat: no-repeat;
+
+    @media (max-width: 1024px) {
+        display: none;
+    }
 `;
 
-export const Cont = styled(Boxlog)`
+export const Cont = styled.div`
     display: flex;
-    justify-content: center;
-    max-width: 380px;
-    max-height: 685px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 90%;
+
+    img {
+        display: none;
+    }
+
+    @media (max-width: 1024px) {
+        img {
+            display: block;
+        }
+    }
 `;
 
 export const LogSection = styled.section`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    justify-content: space-between;
+    width: clamp(100px,80vw,379px);
 `;
 
-export const Title = styled.nav` //se concertado a fonte troque para styled.h1
-    height: 76px;
-    margin-bottom: 15px;
-
-    @font-face{
-        font-family: MarkPro;
-        src: url(${MarkPro})
-    }
-    color: #E0E0E0;
+export const Title = styled.p`
+    font-size: clamp(30px,(8vh+8vw),60px);
     font-family: MarkPro, sans-serif;
-    font-size: 60px;
+    color: #E0E0E0;
 `;
 
-export const Desc = styled.p`
-    height: 90px;
-    display: flex;
-    width: 80%;
-    margin-bottom: 100px;
-
-    @font-face{
-        font-family: MarkPro;
-        src: url(${MarkPro});
-    }
-    color: #E0E0E0;
+export const Desc = styled.span`
+    font-size: clamp(14px,(.8vh+.8vw),16px);
     font-family: MarkPro, sans-serif;
-    font-size: 16px;
+    color: #E0E0E0;
 `;
 
 export const Log = styled(Title)`
-    height: 38px;
-    font-size: 30px;
+    font-size: clamp(20px,(5vh+5vw),30px);
+    width: clamp(100px,80vw,379px);
+`;
+
+export const ContainerLogin = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
 `;
 
 export const InputStyle = styled.input`
     display: flex;
-
-    @font-face{
-        font-family: MarkPro;
-        src: url(${MarkPro})
-    }
     font-family: MarkPro, sans-serif;
     font-size: 16px;
     color: #E0E0E0;
@@ -106,12 +109,9 @@ export const InputStyle = styled.input`
         color: #E0E0E0;
    }
 
-    margin: 32px 0px 32px 0px;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 30px 20px;
-    max-height: 20px;
-
+    width: clamp(100px,80vw,379px);
+    padding: clamp(7px,3vh,20px) 20px;
+    margin: 15px 0;
     border: 1px;
     border-style: solid;
     border-color: #E0E0E0;
@@ -119,46 +119,35 @@ export const InputStyle = styled.input`
 `;
 
 export const UserInputStyle = styled(InputStyle)`
-
     background: url(${require('./assets/images/UserIcon.png')});
     background-size: 20px 20px;
     background-repeat: no-repeat;
     background-position: right 20px top 20px;
-    margin-top: 20px;
-    `;
+`;
 
 export const PassInputStyle = styled(InputStyle)`
     background: url(${require('./assets/images/PassIcon.png')});
     background-size: 20px 25.1px;
     background-repeat: no-repeat;
     background-position: right 20px top 17px;
-    margin-top: 0;
-    `;
-
+`;
 
 export const LogIcon = styled.img`
    padding: 17px 20px 17px 336px;
 `;
 
 export const LogButtonStyle = styled.button`
-    width: 100%;
-    max-height: 67px;
-    box-sizing: border-box;
+    width: clamp(100px,80vw,379px);
+    padding: clamp(7px,3vh,20px) 20px;
     border: 2px solid;
     border-radius: 50px;
     border-color: #c13216;
-
+    cursor: pointer;
     background-image: linear-gradient(to right, #FF2D04, #c13216);
     box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15);
-
-    @font-face{
-        font-family: MarkProBold;
-        src: url(${MarkProBold})
-    }
     font-family: MarkProBold, sans-serif;
     font-size: 18px;
     color: #FFF;
-
 `;
 
 export const LogInvalid = styled.nav`
@@ -166,12 +155,6 @@ export const LogInvalid = styled.nav`
     flex-wrap: wrap;
     width: 70%;
     visibility: hidden;
-
-    @font-face{
-        font-family: MarkProBold;
-        src: url(${MarkProBold})
-    }
-
     font-family: MarkProBold, sans-serif;
     font-size: 16px;
     color: #E9B425;
