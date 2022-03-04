@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 /* Buttons Logout and Refresh */
-const ButtonFooterContainer = styled.div`
+export const ButtonFooterContainer = styled.div`
     flex: 1;
     display: flex;
     height: 100%;
     font-size: 12px;
 `;
 
-const ButtonSquareFooter = styled.button`
+export const ButtonSquareFooter = styled.button`
     flex: 1;
     display: flex;
     height: 100%;
@@ -35,12 +35,3 @@ export const ButtonLogout = styled(ButtonSquareFooter)`
     background-color: transparent;
     color: #FFF;
 `;
-
-export const ButtonsAuth = () => {
-    return (
-        <ButtonFooterContainer>
-            <ButtonResetTimer>Continuar<br />Navegando</ButtonResetTimer>
-            <ButtonLogout>Logout</ButtonLogout>
-        </ButtonFooterContainer>
-    )
-}

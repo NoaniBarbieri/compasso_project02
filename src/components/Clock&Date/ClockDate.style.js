@@ -9,7 +9,7 @@ export const Time = styled.div `
     h1{
         line-height: 70px;
         font-family: MarkProBold;
-        font-size: clamp(40px,12vh,144px);
+        font-size: clamp(48px, 48px + 3vw,144px);
         color: #222222;
         font-weight: 100;
         text-align: center;
@@ -17,13 +17,13 @@ export const Time = styled.div `
 
     p{
         font-family: MarkPro;
-        font-size: clamp(12px,6vh,14px);
-        line-height: 18px;
+        font-size: 14px;
+        line-height:18px;
         text-align: center;
         color: #222222;
     }
 
-    @media (max-width: 1023px) {
+    @media (max-width: 980px) {
         display: none;
     }
 `;

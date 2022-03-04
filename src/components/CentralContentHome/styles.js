@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const CentralContent = styled.main`
-    position: absolute;
+    position: fixed;
     top: 15%;
     max-width: 100%;
     width: 100%;
