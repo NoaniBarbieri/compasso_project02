@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
-import {TimerLogoutContainer} from './style';
+import { TimerLogoutContainer } from './style';
+import { ButtonFooterContainer, ButtonResetTimer, ButtonLogout } from "../partials/Buttons/style";
 
 export const TimerToLogout = () => {
     const [timer, setTimer] = useState(180);
@@ -28,12 +29,19 @@ export const TimerToLogout = () => {
     }, [timer]);
 
     return (
-        <TimerLogoutContainer>
-            <span>Application <br /> refresh in</span>
-            <div>
-                <p>{timer}</p>
-                <span>seconds</span>
-            </div>
-        </TimerLogoutContainer>
+        <>
+            <TimerLogoutContainer>
+                <span>Application <br /> refresh in</span>
+                <div>
+                    <p>{timer}</p>
+                    <span>seconds</span>
+                </div>
+            </TimerLogoutContainer>
+
+            <ButtonFooterContainer>
+                <ButtonResetTimer onClick={resetTimer}>Continuar<br />Navegando</ButtonResetTimer>
+                <ButtonLogout>Logout</ButtonLogout>
+            </ButtonFooterContainer>
+        </>
     )
 };

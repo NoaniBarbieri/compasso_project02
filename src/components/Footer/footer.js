@@ -1,7 +1,7 @@
 import { FooterContainer, FooterArea } from './footer.style';
 import { TimerToLogout } from '../TimerLogout';
 import { ButtonsAuth } from '../partials/Buttons/style';
-import { getDevs } from '../../helpers/devsAPI'
+import { getDevs } from '../../helpers/devsAPI';
 
 const Footer = () => {
     return (
@@ -20,7 +20,6 @@ const Footer = () => {
 
             <FooterArea>
                     <TimerToLogout />
-                    <ButtonsAuth />
             </FooterArea>
         </FooterContainer>
     );
