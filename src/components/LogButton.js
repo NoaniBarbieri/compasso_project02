@@ -1,5 +1,5 @@
 import React from 'react'
-import {LogButtonStyle} from './styles';
+import {LogButtonStyle} from '../styles';
 
 
 const LogButton = () => {

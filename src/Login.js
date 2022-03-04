@@ -1,26 +1,33 @@
 import React from "react";
-import LogText from './components/Login/LogText';
-import LogButton from './components/Login/LogButton';
-import LogUserInvalid from './components/Login/LogUserInvalid';
-import LogUserInput from './components/Login/LogUserInput';
-import LogPassInput from './components/Login/LogPassInput';
-import {Cont, Boxlog, BoxImage, LogBackground} from './components/Login/styles';
+import LogText from './components/LogText';
+import LogButton from './components/LogButton';
+import LogUserInvalid from './components/LogUserInvalid';
+import LogUserInput from './components/LogUserInput';
+import LogPassInput from './components/LogPassInput';
+import { Cont, Boxlog, BoxImage, LogBackground, Log, ContainerLogin } from './styles';
+import { CompassLogoWhite } from "./components/partials/Images/styles";
 
-function Login () {
-    return (  
+function Login() {
+    return (
         <LogBackground>
             <Boxlog>
                 <Cont>
+                    <CompassLogoWhite />
                     <LogText />
-                    <LogUserInput/>
-                    <LogPassInput/>
-                    <LogUserInvalid />
-                    <LogButton />
+                    <ContainerLogin>
+                        <Log>Login</Log>
+                        <LogUserInput />
+                        <LogPassInput />
+                        <LogUserInvalid />
+                        <LogButton />
+                    </ContainerLogin>
                 </Cont>
             </Boxlog>
-            <BoxImage />
+            <BoxImage>
+                <CompassLogoWhite />
+            </BoxImage>
         </LogBackground>
     );
 }
 
-export default Login ;
+export default Login;

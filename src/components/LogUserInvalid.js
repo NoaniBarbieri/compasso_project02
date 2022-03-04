@@ -1,5 +1,5 @@
 import React from 'react'
-import {LogInvalid} from './styles';
+import {LogInvalid} from '../styles';
 
 const LogUserInvalid = () => {
   const userInvalid = "Ops, usuário inválido. Tente novamente!"
