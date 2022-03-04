@@ -2,13 +2,12 @@ import styled from "styled-components";
 import BallLogoImg from '../../../assets/images/bola-LogoCompasso1.png'
 import CompassLogoWhiteFile from "../../../assets/images/Logo-Compasso-Branco-hor 1.png"
 
-const Img = styled.img`
-    position: relative;
-    top: 7vh;
-    max-width: 100%;
-    height: 100%;
-    flex-shrink: 1;
-    display: block;
+const BallLogo = styled.div`
+    flex: 1;
+    background: url(${BallLogoImg});
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left -20px bottom -15px;
 `;
 
 const CompassLogoWhiteContainer = styled.img`
@@ -23,10 +22,8 @@ export const CompassLogoWhite = () => {
     )
 }
 
-const BallLogo = () => {
+export const BallLogo = () => {
     return (
         <Img src={BallLogoImg} />
     )
 }
-
-export { BallLogo };
