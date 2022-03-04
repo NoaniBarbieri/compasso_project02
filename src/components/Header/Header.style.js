@@ -7,7 +7,7 @@ export const ContainerHeader = styled.div`
     height: 15%;
     position: fixed;
     top: 0;
-    padding: 0 5%;
+    padding: 0 3%;
     background-color: pink;
 
     @media (max-width: 1023px) {
