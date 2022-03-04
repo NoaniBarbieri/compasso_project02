@@ -28,6 +28,7 @@ export const LogBackground = styled.div`
     bottom: 0;
     left: 0%;
     display: flex;
+    justify-content: center;
     background: linear-gradient(180deg, #33383D 0%, #1C1D20 100%);
 `;
 
@@ -37,6 +38,16 @@ export const Boxlog = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    img {
+        display: none;
+    }
+
+    @media (max-width: 1024px) {
+        img {
+            display: block;
+        }
+    }
 `;
 
 export const BoxImage = styled.div`
@@ -59,16 +70,6 @@ export const Cont = styled.div`
     justify-content: space-around;
     align-items: center;
     height: 90%;
-
-    img {
-        display: none;
-    }
-
-    @media (max-width: 1024px) {
-        img {
-            display: block;
-        }
-    }
 `;
 
 export const LogSection = styled.section`
