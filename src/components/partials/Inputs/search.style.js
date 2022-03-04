@@ -5,11 +5,11 @@ flex: 1;
 display: flex;
 justify-content: center;
 align-items: center;
-height: 100%;
+height: 40%;
 
 input {
-    margin: 0 auto;
-    width: 70%;
+    margin: 0 10px auto;
+    width: 516px;
     height: 45px;
     background: #26292C;
     border: 1px solid #FFFFFF;

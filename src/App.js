@@ -4,9 +4,9 @@ import SearchPage from "./SearchPage"
 function App() {
     return (
       <div className="App">
-          <Login/> 
+          {/* <Login/> */}
           {/* <HomePage/> */}
-          {/* <SearchPage/> */}
+          <SearchPage/>
       </div>
     );
   }
