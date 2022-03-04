@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import {Time} from "./Style";
+import {Time} from "./ClockDate.style";
 
 export const Clock = () =>{
 
