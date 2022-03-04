@@ -5,27 +5,26 @@ flex: 1;
 display: flex;
 justify-content: center;
 align-items: center;
-height: 40%;
+height: 100%;
 
 input {
-    margin: 0 10px auto;
-    width: 516px;
-    height: 45px;
-    background: #26292C;
-    border: 1px solid #FFFFFF;
-    box-sizing: border-box;
-    border-radius: 50px;
-    font-family: 'Roboto';
-    font-size: 14px;
-    outline: 0;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    color: #FFFFFF;
-    background: url(${require('../../../assets/images/Vector.png')});
-    background-repeat: no-repeat;
-    background-position: 20px 50%;
-    padding: 0 20px 0 50px;
+        margin: 0 auto;
+        width: 70%;
+        height: 45px;
+        background: #26292C;
+        border: 1px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 50px;
+        font-family: 'Roboto';
+        font-size: 14px;
+        outline: 0;
+        text-align: center;
+        justify-content: space-between;
+        color: #FFFFFF;
+        background: url(${require('../../../assets/images/Vector.png')});
+        background-repeat: no-repeat;
+        background-position: 20px 50%;
+        padding: 0 20px 0 50px;
 
     &:focus {
         border: 1px solid #E9B425;

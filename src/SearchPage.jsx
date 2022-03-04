@@ -2,8 +2,9 @@ import React from "react";
 import { LogBackground, Cont  } from "./styles"
 import { CompassLogoWhite } from "./components/partials/Images/styles"
 import { InputSearch } from './components/partials/Inputs/search.style'
-import { getDevs } from './helpers/devsAPI';
+import { InputAPI } from './components/BodySearchPage/InputAPI';
 import { SearchButtonStyle, OutButtonStyle, DivButtons } from './components/partials/Buttons/style'
+import { getDevs } from './helpers/devsAPI'
 
 
 const SearchPage = () => {
@@ -20,15 +21,9 @@ const SearchPage = () => {
 
                 {/* input area and buttons */}
                 <div>
-                    <InputSearch>
-                        <input type={'text'} onKeyPress={event => {
-                            if (event.key === 'Enter') {
-                                getDevs();
-                            }
-                        }}></input>
-                    </InputSearch>
+                    <InputSearch>{InputAPI()}</InputSearch>
                     <DivButtons>
-                        <SearchButtonStyle type="submit">Buscar</SearchButtonStyle>
+                        <SearchButtonStyle type="submit" onClick={getDevs}>Buscar</SearchButtonStyle>
                         <OutButtonStyle type="button">Sair</OutButtonStyle>
                     </DivButtons>
                 </div>
