@@ -1,5 +1,5 @@
 import React from "react";
-import {Title, Desc, Log, LogSection} from '../styles';
+import {Title, Desc, Log, LogSection} from './styles';
 
 const LogText = () => {
     const textTitle = "Olá,";

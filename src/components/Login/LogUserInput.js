@@ -1,5 +1,5 @@
 import React from 'react';
-import {UserInputStyle} from '../styles';
+import {UserInputStyle} from './styles';
 
 const LogUserInput = () => {
     return (

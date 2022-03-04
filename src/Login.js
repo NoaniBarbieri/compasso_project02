@@ -1,10 +1,10 @@
 import React from "react";
-import LogText from './components/LogText';
-import LogButton from './components/LogButton';
-import LogUserInvalid from './components/LogUserInvalid';
-import LogUserInput from './components/LogUserInput';
-import LogPassInput from './components/LogPassInput';
-import {Cont, Boxlog, BoxImage, LogBackground} from './styles';
+import LogText from './components/Login/LogText';
+import LogButton from './components/Login/LogButton';
+import LogUserInvalid from './components/Login/LogUserInvalid';
+import LogUserInput from './components/Login/LogUserInput';
+import LogPassInput from './components/Login/LogPassInput';
+import {Cont, Boxlog, BoxImage, LogBackground} from './components/Login/styles';
 
 function Login () {
     return (  

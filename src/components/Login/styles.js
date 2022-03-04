@@ -1,7 +1,7 @@
 import { useInRouterContext } from 'react-router-dom';
 import styled,{createGlobalStyle} from 'styled-components';
-import MarkPro from "./assets/fonts/MarkPro.ttf";
-import MarkProBold from "./assets/fonts/MarkProBold.ttf";
+import MarkPro from "../../assets/fonts/MarkPro.ttf";
+import MarkProBold from "../../assets/fonts/MarkProBold.ttf";
 
 export const GlobalStyles = createGlobalStyle`
     * {
@@ -40,7 +40,7 @@ export const Boxlog = styled.div`
 `;
 
 export const BoxImage = styled(Boxlog)`
-    background: url(${require('./assets/images/background.png')});
+    background: url(${require('../../assets/images/background.png')});
     background-size: cover;
     background-repeat: no-repeat;
 `;
@@ -121,7 +121,7 @@ export const InputStyle = styled.input`
 
 export const UserInputStyle = styled(InputStyle)`
 
-    background: url(${require('./assets/images/UserIcon.png')});
+    background: url(${require('../../assets/images/UserIcon.png')});
     background-size: 20px 20px;
     background-repeat: no-repeat;
     background-position: right 20px top 20px;
@@ -129,7 +129,7 @@ export const UserInputStyle = styled(InputStyle)`
     `;
 
 export const PassInputStyle = styled(InputStyle)`
-    background: url(${require('./assets/images/PassIcon.png')});
+    background: url(${require('../../assets/images/PassIcon.png')});
     background-size: 20px 25.1px;
     background-repeat: no-repeat;
     background-position: right 20px top 17px;

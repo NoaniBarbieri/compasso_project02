@@ -1,5 +1,5 @@
 import React from 'react';
-import {PassInputStyle} from '../styles';
+import {PassInputStyle} from './styles';
 
 const LogPassInput = () => {
     return (
