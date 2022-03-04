@@ -1,6 +1,7 @@
 import { FooterContainer, FooterArea } from './footer.style';
 import { TimerToLogout } from '../TimerLogout';
 import { ButtonsAuth } from '../partials/Buttons/style';
+import { InputSearch } from '../partials/Inputs/search.style'
 import { getDevs } from '../../helpers/devsAPI';
 
 const Footer = () => {
@@ -11,11 +12,13 @@ const Footer = () => {
             </FooterArea>
 
             <FooterArea>
-                <input type={'text'} placeholder={'Buscar usuários'} onKeyPress={event => {
-                    if (event.key === 'Enter') {
-                        getDevs();
-                    }
-                }}></input>
+                <InputSearch>
+                    <input type={'text'} placeholder={'Buscar usuários'} onKeyPress={event => {
+                        if (event.key === 'Enter') {
+                            getDevs();
+                        }
+                    }}></input>
+                </InputSearch>
             </FooterArea>
 
             <FooterArea>
