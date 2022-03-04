@@ -2,7 +2,7 @@ import styled from "styled-components";
 import BallLogoImg from '../../../assets/images/bola-LogoCompasso1.png'
 import CompassLogoWhiteFile from "../../../assets/images/Logo-Compasso-Branco-hor 1.png"
 
-const BallLogo = styled.div`
+const BallLogoContainer = styled.div`
     flex: 1;
     background: url(${BallLogoImg});
     background-repeat: no-repeat;
@@ -24,6 +24,6 @@ export const CompassLogoWhite = () => {
 
 export const BallLogo = () => {
     return (
-        <Img src={BallLogoImg} />
+        <BallLogoContainer src={BallLogoImg} />
     )
 }
