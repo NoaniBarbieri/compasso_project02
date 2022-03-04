@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 /* TimerLogout */
-const TimerLogoutContainer = styled.div`
+export const TimerLogoutContainer = styled.div`
     flex: 1;
     display: flex;
     align-items: center;
@@ -31,14 +31,3 @@ const TimerLogoutContainer = styled.div`
     }
 `;
 
-export const TimerToLogout = () => {
-    return (
-        <TimerLogoutContainer>
-            <span>Application <br /> refresh in</span>
-            <div>
-                <p>180</p>
-                <span>seconds</span>
-            </div>
-        </TimerLogoutContainer>
-    )
-};
