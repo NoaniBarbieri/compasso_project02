@@ -52,13 +52,13 @@ export const LogButtonStyle = styled.button`
 `;
 
 export const SearchButtonStyle = styled(LogButtonStyle)`
-    margin-bottom: 15px;
     font-size: 36px;
     font-family: 'Roboto';
-    text-align: center;
+    text-align: center;    
 `;
 
 export const OutButtonStyle = styled(SearchButtonStyle)`
+    margin-bottom: 0px;
     border-color: #FFFFFF;
     background-image: linear-gradient(to right, #FFFFFF, #FFFFFF);
     color: #000000;

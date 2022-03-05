@@ -5,6 +5,7 @@ import { InputLarge } from './components/partials/Inputs/search.style'
 import { InputAPI } from './components/BodySearchPage/InputAPI';
 import { SearchButtonStyle, OutButtonStyle, DivButtons } from './components/partials/Buttons/style'
 import { getDevs } from './helpers/devsAPI'
+import { SearchContainer}  from './components/BodySearchPage/SearchPage.style'
 
 
 const SearchPage = () => {
@@ -20,13 +21,13 @@ const SearchPage = () => {
                 </div>
 
                 {/* input area and buttons */}
-                <div>
+                <SearchContainer>
                     <InputLarge>{InputAPI()}</InputLarge>
                     <DivButtons>
                         <SearchButtonStyle type="submit" onClick={getDevs}>Buscar</SearchButtonStyle>
                         <OutButtonStyle type="button">Sair</OutButtonStyle>
                     </DivButtons>
-                </div>
+                </SearchContainer>
             </Cont>
         </LogBackground>
     )
