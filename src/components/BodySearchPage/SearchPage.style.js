@@ -22,6 +22,9 @@ export const SearchContainer = styled.div`
             height: 40%;
             width: 60%;
             text-align: center ;
+            display:flex;
+            justify-content: center;
+            align-items: center ;
         }
 
     }

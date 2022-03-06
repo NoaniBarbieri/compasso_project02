@@ -54,7 +54,7 @@ export const LogButtonStyle = styled.button`
 export const SearchButtonStyle = styled(LogButtonStyle)`
     font-size: 36px;
     font-family: 'Roboto';
-    text-align: center;    
+    text-align: center;
 `;
 
 export const OutButtonStyle = styled(SearchButtonStyle)`
