@@ -28,6 +28,7 @@ export const LogBackground = styled.div`
     bottom: 0;
     left: 0%;
     display: flex;
+    justify-content: center;
     background: linear-gradient(180deg, #33383D 0%, #1C1D20 100%);
 `;
 
@@ -37,6 +38,16 @@ export const Boxlog = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    img {
+        display: none;
+    }
+
+    @media (max-width: 1024px) {
+        img {
+            display: block;
+        }
+    }
 `;
 
 export const BoxImage = styled.div`
@@ -59,16 +70,6 @@ export const Cont = styled.div`
     justify-content: space-around;
     align-items: center;
     height: 90%;
-
-    img {
-        display: none;
-    }
-
-    @media (max-width: 1024px) {
-        img {
-            display: block;
-        }
-    }
 `;
 
 export const LogSection = styled.section`
@@ -136,19 +137,6 @@ export const LogIcon = styled.img`
    padding: 17px 20px 17px 336px;
 `;
 
-export const LogButtonStyle = styled.button`
-    width: clamp(100px,80vw,379px);
-    padding: clamp(7px,3vh,20px) 20px;
-    border: 2px solid;
-    border-radius: 50px;
-    border-color: #c13216;
-    cursor: pointer;
-    background-image: linear-gradient(to right, #FF2D04, #c13216);
-    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15);
-    font-family: MarkProBold, sans-serif;
-    font-size: 18px;
-    color: #FFF;
-`;
 
 export const LogInvalid = styled.nav`
     display: flex;
@@ -161,3 +149,4 @@ export const LogInvalid = styled.nav`
     align-self: center;
     text-align: center;
 `;
+
