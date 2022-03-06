@@ -10,12 +10,20 @@ export const SearchContainer = styled.div`
 
     @media (max-width: 1023px) {
         input {
-            width: 100% ;
-            margin-left: 4px;
-            margin-right: 4px;
+            width: 90%;
+            height: 50px;
             background-size: 12px;
             font-size: 20px;
+            margin-bottom: 20px;
         }
+
+        button {
+            font-size: 18px;
+            height: 40%;
+            width: 60%;
+            text-align: center ;
+        }
+
     }
 
 `  
