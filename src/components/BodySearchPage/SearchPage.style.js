@@ -14,11 +14,11 @@ export const SearchContainer = styled.div`
             height: 50px;
             background-size: 12px;
             font-size: 20px;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
 
         button {
-            font-size: 18px;
+            font-size: 20px;
             height: 40%;
             width: 60%;
             text-align: center ;
