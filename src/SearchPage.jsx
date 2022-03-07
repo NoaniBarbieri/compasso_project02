@@ -5,7 +5,7 @@ import { InputLarge } from './components/partials/Inputs/search.style'
 import { InputAPI } from './components/BodySearchPage/InputAPI';
 import { SearchButtonStyle, OutButtonStyle, DivButtons } from './components/partials/Buttons/style'
 import { getDevs } from './helpers/devsAPI'
-import { SearchContainer } from './components/BodySearchPage/SearchPage.style'
+import { SearchContainer, APIContainer } from './components/BodySearchPage/SearchPage.style'
 import { FeedBackSearchUser } from "./components/FeedBackSearchUser";
 import { useNavigate } from 'react-router-dom';
 
@@ -34,12 +34,11 @@ const SearchPage = () => {
         <LogBackground style={{ flexDirection: "column" }}>
             <Cont>
                 <CompassLogoWhite />
-
-                {
-                    firstAcess ? <FeedBackSearchUser userData={userData} /> : null
-                }
-                
-
+                <APIContainer>
+                    {
+                        firstAcess ? <FeedBackSearchUser userData={userData} /> : null
+                    }
+                </APIContainer>
                 <SearchContainer>
                     <InputLarge type="text" onChange={text => setUser(text.target.value)} onKeyPress={event => {
                         if (event.key === 'Enter') {
