@@ -26,7 +26,7 @@ export const TimerToLogout = () => {
 
     useEffect(() => {
         if (timer === 0) {
-            window.location.href = "/";
+            navigate('/');
         }
 
     }, [timer]);
