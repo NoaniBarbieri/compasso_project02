@@ -44,8 +44,8 @@ export const LogButtonStyle = styled.button`
     border-radius: 50px;
     border-color: #c13216;
     cursor: pointer;
-    background-image: linear-gradient(to right, #FF2D04, #c13216);
-    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15);
+    background-image: linear-gradient(to right, #FF2D04, #C13216);
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15),5px 5px 15px #0b0b0b;
     font-family: MarkProBold, sans-serif;
     font-size: 18px;
     color: #FFF;
@@ -54,7 +54,7 @@ export const LogButtonStyle = styled.button`
 export const SearchButtonStyle = styled(LogButtonStyle)`
     font-size: 36px;
     font-family: 'Roboto';
-    text-align: center;    
+    text-align: center;
 `;
 
 export const OutButtonStyle = styled(SearchButtonStyle)`

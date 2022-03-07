@@ -61,7 +61,7 @@ export const InputLarge = styled(InputSearch)`
     input{
         width: 100%;
         height: 60px;
-        font-size: 30px;
+        font-size: 36px;
     }
     
 `
