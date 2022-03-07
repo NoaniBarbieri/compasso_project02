@@ -7,9 +7,12 @@ import { SearchButtonStyle, OutButtonStyle, DivButtons } from './components/part
 import { getDevs } from './helpers/devsAPI'
 import { SearchContainer } from './components/BodySearchPage/SearchPage.style'
 import { FeedBackSearchUser } from "./components/FeedBackSearchUser";
+import { useNavigate } from 'react-router-dom';
 
 
 const SearchPage = () => {
+
+    const navigate = useNavigate();
 
     const [user, setUser] = useState("");
     const [firstAcess, setFirstAcess] = useState(false)
@@ -45,7 +48,7 @@ const SearchPage = () => {
                     }}>{InputAPI()}</InputLarge>
                     <DivButtons>
                         <SearchButtonStyle type="submit" onClick={getUser}>Buscar</SearchButtonStyle>
-                        <OutButtonStyle type="button">Sair</OutButtonStyle>
+                        <OutButtonStyle type="button" onClick={() => Navigate ('/')}>Sair</OutButtonStyle>
                     </DivButtons>
                 </SearchContainer>
             </Cont>
