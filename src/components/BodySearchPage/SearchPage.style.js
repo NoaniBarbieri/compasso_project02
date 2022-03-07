@@ -19,7 +19,7 @@ export const SearchContainer = styled.div`
 
         button {
             font-size: 20px;
-            height: 40%;
+            height: 50px;
             width: 60%;
             text-align: center ;
             display:flex;
