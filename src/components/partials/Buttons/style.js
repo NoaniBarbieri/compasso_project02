@@ -38,7 +38,7 @@ export const ButtonLogout = styled(ButtonSquareFooter)`
 
 export const LogButtonStyle = styled.button`
     width: clamp(100px,80vw,379px);
-    padding: clamp(7px,3vh,20px) 20px;
+    padding: clamp(7px,3vw,20px) 20px;
     margin-bottom: 15px;
     border: 2px solid;
     border-radius: 50px;
