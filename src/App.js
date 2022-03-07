@@ -1,14 +1,9 @@
-import Login from "./Login";
-import HomePage from "./HomePage"
-import SearchPage from "./SearchPage"
+import PageRoutes from './routes'
+
 function App() {
-    return (
-      <div className="App">
-          {/* <Login/> */}
-          {/* <HomePage/> */}
-          <SearchPage/>
-      </div>
-    );
-  }
-  
-  export default App;
+  return (
+    <PageRoutes />
+  );
+}
+
+export default App;
