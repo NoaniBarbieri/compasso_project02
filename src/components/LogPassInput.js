@@ -1,10 +1,10 @@
 import React from 'react';
 import {PassInputStyle} from '../styles';
 
-const LogPassInput = () => {
+const LogPassInput = React.forwardRef((props, ref) => {
     return (
-        <PassInputStyle type="password" placeholder="Senha"></PassInputStyle>
+        <PassInputStyle type="password" ref={ref} {...props} placeholder="Senha"></PassInputStyle>
     );
-}
+})
 
 export default LogPassInput;
