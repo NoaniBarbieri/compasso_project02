@@ -4,6 +4,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
+import { useNavigate } from "react-router-dom";
 
 /* components */
 import LogText from './components/LogText';
@@ -22,6 +23,7 @@ function Login() {
     const pontoEntryChar = /^([^.]+[.][^.]+)$/;
 
     const passwordReg = /^[0-9]+$/;
+    const navigate = useNavigate();
 
     const schema = yup.object({
         user: yup.string()
@@ -47,7 +49,7 @@ function Login() {
     });
 
     const onSubmit = data => {
-        alert("Tudo certo!")
+        navigate(('/home'));
     }
 
     return (

@@ -2,8 +2,13 @@ import { FooterContainer, FooterArea } from './footer.style';
 import { TimerToLogout } from '../TimerLogout';
 import { InputSearch } from '../partials/Inputs/search.style'
 import { getDevs } from '../../helpers/devsAPI';
+import { Navigate, useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 
 const Footer = () => {
+
+    const [user, setUser] = useState('');
+    const navigate = useNavigate();
     return (
         <FooterContainer>
             <FooterArea>
@@ -12,16 +17,18 @@ const Footer = () => {
 
             <FooterArea>
                 <InputSearch>
-                    <input type={'text'} placeholder={'Buscar usuários'} onKeyPress={event => {
+                    <input type={'text'} onChange={e => setUser(e.target.value)} placeholder={'Buscar usuários'} onKeyPress={event => {
                         if (event.key === 'Enter') {
-                            getDevs();
+                            if (user) {
+                                navigate(('/search'), {userData:user});
+                            }
                         }
                     }}></input>
                 </InputSearch>
             </FooterArea>
 
             <FooterArea>
-                    <TimerToLogout />
+                <TimerToLogout />
             </FooterArea>
         </FooterContainer>
     );
