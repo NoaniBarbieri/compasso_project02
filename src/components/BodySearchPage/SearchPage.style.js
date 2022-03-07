@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SearchContainer = styled.div`
     display: flex ;
     flex-direction: column ;
-    padding-top: 20px ;
+    margin-top: 30px ;
     min-height: 60px;
     max-width: 516px ;
     width: 100%;
@@ -45,11 +45,12 @@ export const APIContainer = styled.div`
 
     p{
         width: 100%;
-        height: 65%;
+        height: 50%;
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
         font-size: 40px;
+        margin-bottom: 20px;
     }
 
     @media (max-width: 1023px) {
