@@ -8,23 +8,41 @@ import { getDevs } from './helpers/devsAPI'
 import { SearchContainer}  from './components/BodySearchPage/SearchPage.style'
 
 
+
+import {useState} from "react";
+
+
+
 const SearchPage = () => {
+
+
+
+    const [InputData,setInputData] = useState(null);
+    const [SearchData, setSearchData] = useState(false);
+    function getInputData(val)
+    {
+        setInputData(val.target.value)
+        setSearchData(false)
+    }
+
 
     return (
         <LogBackground style={{ flexDirection: "column" }}>
             <Cont>
                 <CompassLogoWhite />
 
-                {/* api feedback area */}
+                {SearchData? <h1>{InputData}</h1> : null}{/* api feedback area */}
+
                 <div>
                 
                 </div>
 
                 {/* input area and buttons */}
                 <SearchContainer>
-                    <InputLarge>{InputAPI()}</InputLarge>
+                    <InputLarge type = "text" onChange = {getInputData}>{InputAPI()}</InputLarge>
                     <DivButtons>
-                        <SearchButtonStyle type="submit" onClick={getDevs}>Buscar</SearchButtonStyle>
+                        {/* <SearchButtonStyle type="submit" onClick={getDevs}>Buscar</SearchButtonStyle> */}
+                        <SearchButtonStyle type="submit" onClick={()=>setSearchData(true)}>Buscar</SearchButtonStyle>
                         <OutButtonStyle type="button">Sair</OutButtonStyle>
                     </DivButtons>
                 </SearchContainer>
