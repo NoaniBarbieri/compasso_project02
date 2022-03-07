@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { TimerLogoutContainer } from './style';
 import { ButtonFooterContainer, ButtonResetTimer, ButtonLogout } from "../partials/Buttons/style";
 
+
 export const TimerToLogout = () => {
     const [timer, setTimer] = useState(180);
     const id = useRef(null);
@@ -12,6 +13,10 @@ export const TimerToLogout = () => {
 
     const resetTimer = () => {
         setTimer(180);
+    }
+
+    const LogoutButton = () => {
+        window.location.href = "/";
     }
 
     useEffect(() => {
@@ -40,7 +45,7 @@ export const TimerToLogout = () => {
 
             <ButtonFooterContainer>
                 <ButtonResetTimer onClick={resetTimer}>Continuar<br />Navegando</ButtonResetTimer>
-                <ButtonLogout>Logout</ButtonLogout>
+                <ButtonLogout onClick={LogoutButton}>Logout</ButtonLogout>
             </ButtonFooterContainer>
         </>
     )
