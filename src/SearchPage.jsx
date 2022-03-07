@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { LogBackground, Cont } from "./styles"
 import { CompassLogoWhite } from "./components/partials/Images/styles"
 import { InputLarge } from './components/partials/Inputs/search.style'
@@ -9,7 +9,7 @@ import { SearchContainer } from './components/BodySearchPage/SearchPage.style'
 import { FeedBackSearchUser } from "./components/FeedBackSearchUser";
 
 
-const SearchPage = () => {
+const SearchPage = (props) => {
 
     const [user, setUser] = useState("");
     const [firstAcess, setFirstAcess] = useState(false)
@@ -23,9 +23,17 @@ const SearchPage = () => {
                 element.name.toLowerCase().normalize("NFD").replace(/[^a-zA-Zs]/g, "").startsWith(user.toLowerCase().normalize("NFD").replace(/[^a-zA-Zs]/g, ""))
             );
             setUserData(userSearch[0])
-            if(!firstAcess) setFirstAcess(true)
+            if (!firstAcess) setFirstAcess(true)
         })
     }
+
+    useEffect(() => {
+        if (props.useData) {
+            setUserData(userData);
+            setFirstAcess(true);
+            getUser();
+        }
+    }, []);
 
     return (
         <LogBackground style={{ flexDirection: "column" }}>
@@ -35,7 +43,7 @@ const SearchPage = () => {
                 {
                     firstAcess ? <FeedBackSearchUser userData={userData} /> : null
                 }
-                
+
 
                 <SearchContainer>
                     <InputLarge type="text" onChange={text => setUser(text.target.value)} onKeyPress={event => {
